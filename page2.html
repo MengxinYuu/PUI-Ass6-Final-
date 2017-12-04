@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize-subpage2.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo-subpage2.css" />
+		<script>
+			document.documentElement.className = 'js';
+			var supportsCssVars = function() {
+				var s = document.createElement('style'),
+				support;
+
+				s.innerHTML = "root: { --tmp-var: bold; }";
+				document.head.appendChild(s);
+				support = !!(window.CSS && window.CSS.supports && window.CSS.supports('font-weight', 'var(--tmp-var)'));
+				s.parentNode.removeChild(s);
+				return support;
+			}
+		</script>
+	</head>
+	<body class="demo-3 loading">
+		<main>
+            <svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+			</symbol>
+            <div class="content">
+				<header class="codrops-header">
+					<div class="codrops-links">
+						<a class="codrops-icon codrops-icon--prev" href="homepage.html"><svg class="icon icon--arrow"><use xlink:href="#icon-arrow"></use></svg></a>
+					</div>
+					<h1 class="codrops-header__title">Ideate Gallery</h1>
+                    <span class="info">Learning Media Design</span>
+				</header>
+			</div>
+            <div class="morph-wrap">
+				<svg class="morph" width="1400" height="770" viewBox="0 0 1400 770">
+					<polygon points="700,84.4 1047.1,685.6 352.9,685.6 352.9,685.6 352.9,685.6 352.9,685.6"/>
+				</svg>
+			</div>
+			<div class="content-wrap">
+				<div class="content content--layout content--layout-1">
+					<img class="content__img" src="img/Ideate1.png" alt="Some image" />
+					<h3 class="content__title">Design purpose</h3>
+				</div>
+			</div>
+			<div class="content-wrap">
+				<div class="content content--layout content--layout-2">
+					<img class="content__img" src="img/ideate2.png" alt="Some image" />
+					<h3 class="content__title">User Interview</h3>
+				</div>
+			</div>
+			<div class="content-wrap">
+				<div class="content content--layout content--layout-3">
+					<img class="content__img" src="img/ideate3.png" alt="Some image" />
+					<h3 class="content__title">Insight</h3>
+				</div>
+			</div>
+			<div class="content-wrap">
+				<div class="content content--layout content--layout-4">
+					<img class="content__img" src="img/ideate4.png" alt="Some image" />
+					<h3 class="content__title">Prototype</h3>
+				</div>
+			</div>
+
+			<section class="content content--related">
+				<p class="content__info">Coming Soon:high-fidelity mock-up</p>
+				<a class="content__related-item" href="#">
+					<img class="content__related-img" src="img/ideate5.png">
+				</a>
+				<a class="content__related-item" href="#">
+					<img class="content__related-img" src="img/ideate6.png">
+				</a>
+			</section>
+		</main>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/anime.min.js"></script>
+		<script src="js/scrollMonitor.js"></script>
+		<script src="js/demo3.js"></script>
+	</body>
+</html>
